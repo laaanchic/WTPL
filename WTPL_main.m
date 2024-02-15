@@ -11,7 +11,7 @@
 
 %% Load data
 tic
-WTPL_path = 'C:\Users\gk02\ownCloud\DB to OC\'; % give the path in which the EEG data is saved here
+WTPL_path = 'C:\my_WTPL_path\'; % give the path in which the EEG data is saved here
 load ([WTPL_path 'EEG']);
 disp(['Loading took ' num2str(toc,3) ' seconds']);
 %% Calculate the TFR (Time Frequency Representation)
