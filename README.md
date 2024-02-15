@@ -3,7 +3,7 @@ The Within Trial Phase Lock analysis (WTPL) measures the rhythmicity of electrop
 WTPL works by calculating the average phase difference between the signal at each time point and a family of time-points before and after it, defined by the user in units of cycles.
 
 The algorithm is described in:
-Karvat, G., Ofir, N., & Landau, A. N. (2023). Sensory Drive Modifies Brain Dynamics and the Temporal Integration Window. Journal of Cognitive Neuroscience, 1–18. [https://doi.org/10.1162/jocn_a_02088](url)
+Karvat, G., Ofir, N., & Landau, A. N. (2023). [Sensory Drive Modifies Brain Dynamics and the Temporal Integration Window. Journal of Cognitive Neuroscience, 1–18.] (https://doi.org/10.1162/jocn_a_02088)
 
 % This script provides an example of calculation of the Within-Trial Phase
 % Locking (WTPL) as presented in Karvat, Ofir, & Landau, JOCN (2023).
