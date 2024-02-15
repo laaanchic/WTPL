@@ -5,6 +5,10 @@ WTPL works by calculating the average phase difference between the signal at eac
 The algorithm is described in:
 Karvat, G., Ofir, N., & Landau, A. N. (2023). [Sensory Drive Modifies Brain Dynamics and the Temporal Integration Window. Journal of Cognitive Neuroscience, 1–18. DOI: 10.1162/jocn_a_02088](https://doi.org/10.1162/jocn_a_02088)
 
+[EEG](EEG.mat)
+
+[RedBlueColorMap.m](RedBlueColorMap.m)
+
 % This script provides an example of calculation of the Within-Trial Phase
 % Locking (WTPL) as presented in Karvat, Ofir, & Landau, JOCN (2023).
 % The input is the preprocessed EEG, divided into trials and in a "raw"
