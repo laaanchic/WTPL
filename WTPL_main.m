@@ -15,16 +15,16 @@ WTPL_path = 'C:\Users\gk02\ownCloud\DB to OC\'; % give the path in which the EEG
 load ([WTPL_path 'EEG']);
 disp(['Loading took ' num2str(toc,3) ' seconds']);
 %% Calculate the TFR (Time Frequency Representation)
-fs              = EEG.fsample;
-cfg             = [];
-cfg.method      = 'wavelet';
+fs              = EEG.fsample;          % Sampling frequency
+cfg             = [];                   % Configuration structure 
+cfg.method      = 'wavelet';            % Use Morlet wavelets by multiplying in the frequency domain
 cfg.output      = 'fourier';            % Keeps the output as complex numbers
 cfg.width       = 5;                    % Width of the wavelet, in cycles
 cfg.foi         = 1:30;                 % Frequencies of interest, in Hz
 cfg.toi         = -0.5:1/fs:1.5;        % Time-windows of interest.
 cfg.keeptrials  = 'yes';
-cfg.pad         = 'nextpow2';
-freq = ft_freqanalysis(cfg,EEG);        % the structure _freq_ containg the TFR data
+cfg.pad         = 'nextpow2';           % Helps to speed up 
+freq = ft_freqanalysis(cfg,EEG);        % the structure _freq_ contains the TFR data
 %% WTPL calculation
 f = freq.freq;                          % frequency array
 t = freq.time;                          % time array
