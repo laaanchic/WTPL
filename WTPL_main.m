@@ -25,6 +25,7 @@ cfg.toi         = -0.5:1/fs:1.5;        % Time-windows of interest.
 cfg.keeptrials  = 'yes';
 cfg.pad         = 'nextpow2';
 freq = ft_freqanalysis(cfg,EEG);        % the structure _freq_ containg the TFR data
+
 %% WTPL calculation
 nlag_post   = 1;                        % number of lags after the time of interest (in the paper, we used 1)
 nlag_pre    = 1;                        % number of lags before the time of interest (in the paper, we used 1)
