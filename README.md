@@ -14,6 +14,6 @@ Files in this repository:
 
 [wtplComp.m](wtplComp.m): a matlab function taking a frequency structure (freq, output of ft_freqanalysis), and desired lags in units of cycles (lag), and returns the WTPL.
 
-[RedBlueColorMap.m](RedBlueColorMap.m): created the colormap that was used in the original publication. 
+[RedBlueColorMap.m](RedBlueColorMap.m): creates the colormap that was used in the original publication. 
 
 Originally deposited in Zenodo, 15/02/2024, DOI: 10.5281/zenodo.10664624
