@@ -8,15 +8,13 @@ Karvat, G., Ofir, N., & Landau, A. N. (2023). [Sensory Drive Modifies Brain Dyna
 
 Files in this repository:
 
-[WTPL_main](WTPL_main): provides an example of calculation of WTPL. When using this script, please update WTPL_path to the path in which the WTPL files are saved. Note, that in order to run this script the freely available toolbox [Fieldtrip](https://www.fieldtriptoolbox.org/) should also be on your matlab path. When using fieldtrip, please also cite [this paper](http://dx.doi.org/10.1155/2011/156869). 
+[WTPL_main](WTPL_main.m): provides an example of calculation of WTPL. When using this script, please update WTPL_path to the path in which the WTPL files are saved. Note, that in order to run this script the freely available toolbox [Fieldtrip](https://www.fieldtriptoolbox.org/) should also be on your matlab path. When using fieldtrip, please also cite [this paper](http://dx.doi.org/10.1155/2011/156869). 
 
 [EEG](EEG.mat): preprocessed EEG, divided into trials and in a "raw" structure according to the Fieldtrip conventions.
 
-[wtplComp.m](wtplComp.m): a matlab function taking a frequency 
+[wtplComp.m](wtplComp.m): a matlab function taking a frequency structure (FREQ, output of ft_freqanalysis), timepoints of interest (toi),  
 
-
-
-[RedBlueColorMap.m](RedBlueColorMap.m)
+[RedBlueColorMap.m](RedBlueColorMap.m): created the colormap that was used in the original publication. 
 
 % This script provides an example of calculation of the Within-Trial Phase
 % Locking (WTPL) as presented in Karvat, Ofir, & Landau, JOCN (2023).
