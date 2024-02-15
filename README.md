@@ -12,17 +12,8 @@ Files in this repository:
 
 [EEG](EEG.mat): preprocessed EEG, divided into trials and in a "raw" structure according to the Fieldtrip conventions.
 
-[wtplComp.m](wtplComp.m): a matlab function taking a frequency structure (FREQ, output of ft_freqanalysis), timepoints of interest (toi),  
+[wtplComp.m](wtplComp.m): a matlab function taking a frequency structure (freq, output of ft_freqanalysis), and desired lags in units of cycles (lag), and returns the WTPL.
 
 [RedBlueColorMap.m](RedBlueColorMap.m): created the colormap that was used in the original publication. 
 
-% This script provides an example of calculation of the Within-Trial Phase
-% Locking (WTPL) as presented in Karvat, Ofir, & Landau, JOCN (2023).
-% The input is the preprocessed EEG, divided into trials and in a "raw"
-% structure according to the Fieldtrip conventions (the toolbox fieldtrip is 
-% freely available at https://www.fieldtriptoolbox.org/).
-% 
-% For the code to work,  the directories containing this script and
-% associated functions, as well as Fieldtrip, should be in the Matlab path.
-%
 Originally deposited in Zenodo, 15/02/2024, DOI: 10.5281/zenodo.10664624
